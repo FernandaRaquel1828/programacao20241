@@ -1,5 +1,7 @@
+from random import choice
 x = { }
 lista = [ ]
+
 sair = " "
 while True: 
     nome = input("digite seu nome: ")
@@ -10,10 +12,11 @@ while True:
     lista.append(x)
     if sair == "fim":
         break
+idades = [pessoa['Idade'] for pessoa in lista]
 
 print(lista)
 print(len(lista))
-print(sum(idade)/len(lista))
-
+print(sum(idades)/len(idades))
+print(choice(lista))
 
        
